@@ -1,20 +1,4 @@
-<h1>Update an Article</h1>
-
-<% if @article.errors.any? %>
-
-  <div id="error_explanation">
-
-    <p><%= pluralize(@article.errors.count, "error") %> prohibited this course from being updated:</p>
-
-    <p>
-    <% @article.errors.full_messages.each do |message| %>
-      <%= message %>
-    <% end %>  
-    </p>
-
-  </div>
-
-<% end %> 
+<h1>Update an Article</h1> 
 
 <%= render 'form' %>
 
